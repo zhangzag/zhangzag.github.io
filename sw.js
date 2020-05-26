@@ -1,6 +1,17 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js')
+// importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js')
+// var cacheStorageKey = 'minimal-pwa-1'
+// var cacheList = ['/', 'index.html']
+// self.addEventListener('install', (e) => {
+//   e.waitUntil(
+//     caches
+//       .open(cacheStorageKey)
+//       .then((cache) => cache.addAll(cacheList))
+//       .then(() => self.skipWaiting())
+//   )
+// })
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js')
 var cacheStorageKey = 'minimal-pwa-1'
-var cacheList = ['/', '/index.html', '/css/main.css', '/fancybox/logo.png']
+var cacheList = ['/', 'index.html', 'main.css', 'youhun.jpg']
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches
